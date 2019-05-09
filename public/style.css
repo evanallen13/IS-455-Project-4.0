@@ -1,0 +1,346 @@
+body{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    background-color: rgb(223,227,238);
+}
+.header{
+    background-color:rgb(60,90,153);
+    display: block;
+    height: 75px;
+    color: white;
+}
+.header h1{
+    display: inline;
+    margin-left: 10px;
+    color: white;
+}
+.nav_btn{
+    margin-top: 50px;
+    border: 0;
+    color: white;
+    background-color:rgb(60,90,153);
+    border: white solid 1px;
+    border-radius: 2px;
+    width: 50px;    
+}
+/* Contact Table */
+#Contacts-Table #tableTitle{
+    background-color: rgb(60,90,153);
+    height: 30px;
+}
+#Contacts-Table h3{
+    margin: 0;
+    padding-left: 10px;
+    color: white;
+    padding-top: 10px;
+}
+#Contacts-Table{
+    width: 50%;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+thead{
+    border-bottom: rgb(60,90,153) solid 1px;
+    border-top: rgb(60,90,153) solid 1px;
+    height: 10px;
+}
+table{
+    width: 50%;
+    border-collapse: collapse;
+    position: absolute;
+}
+/* Index Edit Page */
+#indexPageEditPage{
+    border: rgb(60,90,153) solid 1px;
+    position: absolute;
+    margin-top: 5px;
+    visibility: hidden;/* Change */
+    height: 0;
+    width: 25%;
+    margin-left: 35%
+}
+#indexPageEditPage p{
+    margin:0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+}
+#indexPageEditPage input{
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 80%;
+}
+#indexPageEditPage #indexPageEditPopupTitle{
+    background-color: rgb(60,90,153);
+    height: 50px;
+}
+#indexPageEditPage #indexPageEditPopupTitle h1{
+    margin: 0;
+    color: white;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+#indexPageEditPageFooter{
+    display: flex;
+}
+#indexPageEditPageErrorHandler{
+    display: inline;
+    margin-left: 5%;
+}
+#indexPageEditPageErrorHandler{
+    width: 250px;
+}
+#indexPageEditSubmitBtn{
+    display: inline;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+table{
+    width: 50%;
+    border-collapse: collapse;
+    position: absolute;
+}
+thead{
+    border-bottom: rgb(60,90,153) solid 1px;
+    border-top: rgb(60,90,153) solid 1px;
+    height: 10px;
+}
+td{
+    text-align: center;
+}
+.btn-td{
+    width: 25px;
+}
+/* Detail Edit Page */
+#detailPageEditPage{
+    border: rgb(60,90,153) solid 1px;
+    position: absolute;
+    margin-top: 5px;
+    visibility: hidden;/* Change */
+    height: 0;
+    width: 25%;
+    margin-left: 35%
+}
+#detailPageEditPage p{
+    margin:0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+}
+#detailPageEditPage input{
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 80%;
+}
+#detailPageEditPage #detailPageEditPopupTitle{
+    background-color: rgb(60,90,153);
+    height: 50px;
+}
+#detailPageEditPage #detailPageEditPopupTitle h1{
+    margin: 0;
+    color: white;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+#detailPageEditPageFooter{
+    display: flex;
+}
+#detailPageEditPageErrorHandler{
+    display: inline;
+    margin-left: 5%;
+}
+#detailPageEditPageErrorHandler{
+    width: 250px;
+}
+#detailPageEditSubmitBtn{
+    display: inline;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+/* Add Edit Page */
+#addPageEditPage{
+    border: rgb(60,90,153) solid 1px;
+    position: absolute;
+    visibility: hidden;
+    height: 0;
+    width: 25%;
+    margin-left: 35%
+}
+#addPageEditPage p{
+    margin:0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+}
+#addPageEditPage input{
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 80%;
+}
+#addPageEditPage #addPageEditPopupTitle{
+    background-color: rgb(60,90,153);
+    height: 50px;
+}
+#addPageEditPage #addPageEditPopupTitle h1{
+    margin: 0;
+    color: white;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+#addPageEditEditSubmitBtn{
+    margin-left: 35vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+/* Add Page */
+#addPage{
+    border: rgb(60,90,153) solid 1px;
+    position: absolute;
+    visibility: hidden;
+    height: 0;
+    width: 25%;
+    margin-left: 35%
+}
+#addPage_Header{
+    background-color: rgb(60,90,153);
+    height: 50px; 
+}
+#addPage_Header h1{
+    margin: 0;
+    color: white;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+#addPage p{
+    margin:0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+}
+#addPage input{
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 80%;
+}
+#addPageSubmitBtn{
+    margin-left: 1vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+#addPageFooter{
+    display: flex;
+}
+#errorHandler{
+    display: inline;
+    margin-left: 5%;
+}
+#errorHandler p{
+    width: 250px;
+}
+#addPageSubmitBtn{
+    display: inline;
+    margin-left: 15%;
+}
+
+/* Index Page Detail Page */
+#indexDetailPage{
+    border: rgb(60,90,153) solid 1px;
+    position: absolute;
+    width: 25%;
+    margin-left: 35%;
+    visibility: hidden;
+    height: 0;
+}
+#indexDetailPageTitle{
+    background-color: rgb(60,90,153);
+    height: 50px;    
+}
+#indexDetailPageTitle h1{
+    margin: 0;
+    color: white;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+.detailsField{
+    display: block;
+    margin-left: 10px;
+}
+.detailsField p{
+    display: inline-block;
+}
+.details{
+    background-color: rgb(60,90,153);
+    border-radius: 3px;
+    padding: 3px;
+    color: white;
+}
+/* Add Page Detail Page */
+#addPageDetailPage{
+    border: rgb(60,90,153) solid 1px;
+    position: absolute;
+    width: 25%;
+    margin-left: 35%;
+    visibility: hidden;
+    height: 0;
+}
+#addPageDetailPageTitle{
+    background-color: rgb(60,90,153);
+    height: 50px;    
+}
+#addPageDetailPageTitle h1{
+    margin: 0;
+    color: white;
+    margin-left: 10px;
+    padding-top: 15px;   
+}
+
+
+/* Buttons */
+.refresh-btns{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    margin-left: 50%;
+}
+
+.submitBtn{
+    color: white;
+    background-color: rgb(64, 156, 64);
+    border: 0;
+    width: 80px;
+    height: 30px;
+    border-radius: 3px;
+}
+.detailsBtn{
+    border: blue 1px solid;
+    color: blue;   
+    border-radius: 3px;
+    background-color: white; 
+    margin-left: 5px;
+}
+.detailsBtn:active{
+    color: white;
+    background-color: blue;
+}
+.editBtn{
+    border: rgb(240, 189, 21) 1px solid;
+    color: rgb(240, 189, 21);
+    border-radius: 3px;
+    background-color: white;
+    margin-left: 5px;
+}
+.editBtn:active{
+    color: white;
+    background-color: rgb(240, 189, 21);
+}
+.deleteBtn{
+    border: red 1px solid;
+    color: red;   
+    border-radius: 3px;
+    background-color: white; 
+    margin-left: 5px;
+}
+.deleteBtn:active{
+    color: white;
+    background-color: red;
+}
+

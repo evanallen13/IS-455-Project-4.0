@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>I Am Ironman</title>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.11.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/5.11.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.11.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.11.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.11.1/firebase-storage.js"></script>
+    <script defer src="/__/firebase/5.10.1/firebase-firestore.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <script src="app.js" type="module" defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1>Contact Manager</h1>
+      <button type="button" id="indexBtn" class="nav_btn">Index</button>
+      <button type="button" id="newBtn" class="nav_btn">New</button>
+    </div>
+<!-- Contact Table -->
+    <div id="Contacts-Table">
+      <table>
+        <h3 id="tableTitle">Contact List</h3>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+<!-- Index Edit Page -->
+    <div id="indexPageEditPage">
+        <div id="indexPageEditPopupTitle">
+          <h1>Edit</h1>
+        </div>
+        <form action="#">
+          <div id="indexPageEditName">
+            <p id="editNameTitle">Name</p>
+            <input type="text" id="indexPageEditNameInput">
+          </div>
+          <div id="editEmail">
+            <p id="editEmailTitle">Email</p>
+            <input type="text" id="indexPageEditEmailInput">
+          </div>
+          <div id="editPhone">
+            <p id="editPhoneTitle">Phone</p>
+            <input type="text" id="indexPageEditPhoneInput">
+          </div>
+          <div id="indexPageEditPageFooter">
+            <div id="indexPageEditPageErrorHandler">
+                <p id="indexPageEditPageEmailError"></p>
+                <p id="indexPageEditPagePhoneError"></p>
+            </div>
+            <button type="button" id='indexPageEditSubmitBtn' class="submitBtn">Submit</button>
+          </div>
+        </form>
+    </div>
+<!-- Detail Edit Page -->
+    <div id="detailPageEditPage">
+        <div id="detailPageEditPopupTitle">
+          <h1>Edit</h1>
+        </div>
+        <form action="#">
+          <div id="detailPageEditName">
+            <p id="editNameTitle">Name</p>
+            <input type="text" id="detailPageEditNameInput">
+          </div>
+          <div id="editEmail">
+            <p id="editEmailTitle">Email</p>
+            <input type="text" id="detailPageEditEmailInput">
+          </div>
+          <div id="editPhone">
+            <p id="editPhoneTitle">Phone</p>
+            <input type="text" id="detailPageEditPhoneInput">
+          </div>
+          <div id="detailPageEditPageFooter">
+            <div id="detailPageEditPageErrorHandler">
+                <p id="detailPageEditPageEmailError"></p>
+                <p id="detailPageEditPagePhoneError"></p>
+            </div>
+            <button type="button" id='detailPageEditSubmitBtn' class="submitBtn">Submit</button>
+          </div>
+        </form>
+    </div>
+
+<!-- Add Edit Page -->
+    <div id="addPageEditPage">
+      <div id="addPageEditPopupTitle">
+        <h1>Edit</h1>
+      </div>
+      <form action="#">
+        <div id="addPageEditName">
+          <p id="editNameTitle">Name</p>
+          <input type="text" id="addPageEditNameInput">
+        </div>
+        <div id="editEmail">
+          <p id="editEmailTitle">Email</p>
+          <input type="text" id="addPageEditEmailInput">
+        </div>
+        <div id="editPhone">
+          <p id="editPhoneTitle">Phone</p>
+          <input type="text" id="addPageEditPhoneInput">
+        </div>
+          <button type="button" id='addPageEditEditSubmitBtn' class="submitBtn">Submit</button>
+          </form>
+    </div>
+<!-- Add Page-->
+    <div id="addPage">
+        <div id="addPage_Header">
+            <h1>New Contact</h1>
+        </div>
+        <form action="#" id="inputForm">
+            <p>Name</p>
+            <input type="text" id="addPageNameInput" autocomplete="off">
+            <p>Email</p>
+            <input type="text" id="addPageEmailInput" autocomplete="off">
+            <p>Phone</p>
+            <input type="text" id="addPagePhoneInput" autocomplete="off">
+            <br>
+            <div id="addPageFooter">
+              <div id="errorHandler">
+                <p id="addEmailError"></p>
+                <p id="addPhoneError"></p>
+              </div>
+              <button type="button" class="submitBtn" id="addPageSubmitBtn">Submit</button>
+            </div>
+        </form>
+    </div>
+<!-- Index Page Detail Page -->
+    <div id="indexDetailPage">
+        <div id="indexDetailPageTitle">
+            <h1>Details</h1>
+        </div>
+        <form action="#" id="indexDetailPageForm" method="POST"> 
+            <div class="detailsField">
+                <p>Name:</p>
+                <p class="details" id="indexDetailPageName"></p>
+            </div>
+            <div class="detailsField">
+                <p>Email:</p>
+                <p class="details" id="indexDetailPageEmail"></p>
+            </div>
+            <div class="detailsField">
+                <p>Phone:</p>
+                <p class="details" id="indexDetailPagePhone"></p>
+            </div>
+            <div class="refresh-btns">
+                <button type="button" id='indexDetailPageEditBtn' class="editBtn">Edit</button>
+                <button type="button" id="indexDetailPageDeleteBtn" class="deleteBtn">Delete</button>
+                <button type="button" class="submitBtn" id="indexDetailPageSubmitBtn">Submit</button>
+            </div>
+        </form>
+    </div>
+<!-- Add Page Detail Page-->
+    <div id="addPageDetailPage">
+      <div id="addPageDetailPageTitle">
+          <h1>Details</h1>
+      </div>
+      <form action="#" id="addPageDetailPageForm" method="POST"> 
+          <div class="detailsField">
+              <p>Name:</p>
+              <p class="details" id="addPageDetailPageName"></p>
+          </div>
+          <div class="detailsField">
+              <p>Email:</p>
+              <p class="details" id="addPageDetailPageEmail"></p>
+          </div>
+          <div class="detailsField">
+              <p>Phone:</p>
+              <p class="details" id="addPageDetailPagePhone"></p>
+          </div>
+          <div class="refresh-btns">
+              <button type="button" id='addPageDetailPageEditBtn' class="editBtn">Edit</button>
+              <button type="button" id="addPageDetailPageDeleteBtn" class="deleteBtn">Delete</button>
+              <button type="button" class="submitBtn" id="addPageDetailPageSubmitBtn">Submit</button>
+          </div>
+      </form>
+  </div>
+    
+  </body>
+</html>
