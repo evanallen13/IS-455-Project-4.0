@@ -56,7 +56,7 @@ table{
     margin-top: 5px;
     visibility: hidden;/* Change */
     height: 0;
-    width: 25%;
+    width: 30%;
     margin-left: 35%
 }
 #indexPageEditPage p{
@@ -82,18 +82,19 @@ table{
 }
 #indexPageEditPageFooter{
     display: flex;
+    float: right;
+    margin-top: 3%;
+    margin-right: 10%;
 }
 #indexPageEditPageErrorHandler{
     display: inline;
-    margin-left: 5%;
 }
-#indexPageEditPageErrorHandler{
+#indexPageEditPageErrorHandler p{
     width: 250px;
+    margin: 0;
 }
 #indexPageEditSubmitBtn{
     display: inline;
-    margin-left: 10%;
-    margin-top: 3%;
 }
 table{
     width: 50%;
@@ -116,9 +117,9 @@ td{
     border: rgb(60,90,153) solid 1px;
     position: absolute;
     margin-top: 5px;
-    visibility: hidden;/* Change */
+    visibility: hidden;
     height: 0;
-    width: 25%;
+    width: 30%;
     margin-left: 35%
 }
 #detailPageEditPage p{
@@ -144,6 +145,10 @@ td{
 }
 #detailPageEditPageFooter{
     display: flex;
+    float: right;
+    margin-right: 10%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 #detailPageEditPageErrorHandler{
     display: inline;
@@ -154,8 +159,6 @@ td{
 }
 #detailPageEditSubmitBtn{
     display: inline;
-    margin-left: 10%;
-    margin-top: 3%;
 }
 /* Add Edit Page */
 #addPageEditPage{
@@ -188,7 +191,8 @@ td{
     padding-top: 10px;
 }
 #addPageEditEditSubmitBtn{
-    margin-left: 35vh;
+    float:right ;
+    margin-right: 10%;
     margin-top: 2vh;
     margin-bottom: 2vh;
 }
@@ -198,7 +202,7 @@ td{
     position: absolute;
     visibility: hidden;
     height: 0;
-    width: 25%;
+    width: 30%;
     margin-left: 35%
 }
 #addPage_Header{
@@ -229,17 +233,17 @@ td{
 }
 #addPageFooter{
     display: flex;
+    float: right;
+    margin-right: 10%;
 }
 #errorHandler{
     display: inline;
-    margin-left: 5%;
 }
 #errorHandler p{
     width: 250px;
 }
 #addPageSubmitBtn{
     display: inline;
-    margin-left: 15%;
 }
 
 /* Index Page Detail Page */
@@ -261,6 +265,10 @@ td{
     margin-left: 10px;
     padding-top: 10px;
 }
+#indexDetailPageRefreshBtns{
+    float: right;
+}
+
 .detailsField{
     display: block;
     margin-left: 10px;
@@ -278,7 +286,7 @@ td{
 #addPageDetailPage{
     border: rgb(60,90,153) solid 1px;
     position: absolute;
-    width: 25%;
+    width: 30%;
     margin-left: 35%;
     visibility: hidden;
     height: 0;
@@ -293,13 +301,16 @@ td{
     margin-left: 10px;
     padding-top: 15px;   
 }
+#addPageDetailPageRefreshBtns{
+    float: right;
+}
 
 
 /* Buttons */
 .refresh-btns{
     margin-top: 30px;
     margin-bottom: 5px;
-    margin-left: 50%;
+    margin-right: 10%;
 }
 
 .submitBtn{

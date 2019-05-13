@@ -1,5 +1,6 @@
 import { DB } from '../../app.js'
 import { indexDetailPageEditBtnEvent } from './editBtn.js'
+import { del } from '../../CRUD/delete.js'
 export function indexPageDetailPage(id){
     const indexPage = document.getElementById('Contacts-Table')
     indexPage.style.visibility = 'hidden'
@@ -39,5 +40,9 @@ function addToPage(id,name,email,phone){
     const indexDetailPageSubmitBtn = document.getElementById('indexDetailPageSubmitBtn')
     indexDetailPageSubmitBtn.addEventListener('click',()=>{
         location.reload()
+    })
+    const indexDetailPageDeleteBtn = document.getElementById('indexDetailPageDeleteBtn')
+    indexDetailPageDeleteBtn.addEventListener('click',()=>{
+        del(id)
     })
 }

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>I Am Ironman</title>
+    <link rel="icon" href="./ironman.png" />
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/5.11.1/firebase-app.js"></script>
     <!-- include only the Firebase features as you need -->
@@ -116,7 +117,7 @@
           <input type="text" id="addPageEditPhoneInput">
         </div>
           <button type="button" id='addPageEditEditSubmitBtn' class="submitBtn">Submit</button>
-          </form>
+        </form>
     </div>
 <!-- Add Page-->
     <div id="addPage">
@@ -158,7 +159,7 @@
                 <p>Phone:</p>
                 <p class="details" id="indexDetailPagePhone"></p>
             </div>
-            <div class="refresh-btns">
+            <div class="refresh-btns" id="indexDetailPageRefreshBtns">
                 <button type="button" id='indexDetailPageEditBtn' class="editBtn">Edit</button>
                 <button type="button" id="indexDetailPageDeleteBtn" class="deleteBtn">Delete</button>
                 <button type="button" class="submitBtn" id="indexDetailPageSubmitBtn">Submit</button>
@@ -183,7 +184,7 @@
               <p>Phone:</p>
               <p class="details" id="addPageDetailPagePhone"></p>
           </div>
-          <div class="refresh-btns">
+          <div class="refresh-btns" id="addPageDetailPageRefreshBtns">
               <button type="button" id='addPageDetailPageEditBtn' class="editBtn">Edit</button>
               <button type="button" id="addPageDetailPageDeleteBtn" class="deleteBtn">Delete</button>
               <button type="button" class="submitBtn" id="addPageDetailPageSubmitBtn">Submit</button>
