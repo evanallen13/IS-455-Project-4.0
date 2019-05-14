@@ -3,22 +3,25 @@ import { indexPageDetailPage } from './detailPage/tableDetailPage.js'
 import { editBtnEvent } from './editPage/editPage.js'
 
 export function tableData(id,name,email,phone){
-    const tbody = document.querySelector('tbody')
-    let tr = document.createElement('tr')
-    tr.setAttribute('id',id)
+    let test =document.getElementById(id)
+    if(test === null){
+        const tbody = document.querySelector('tbody')
+        let tr = document.createElement('tr')
+        tr.setAttribute('id',id)
 
-    let rowInfo = tableInfo(id,name,email,phone)
-    tr.appendChild(rowInfo[0])
-    tr.appendChild(rowInfo[1])
-    tr.appendChild(rowInfo[2])
-    tr.appendChild(rowInfo[3])
+        let rowInfo = tableInfo(id,name,email,phone)
+        tr.appendChild(rowInfo[0])
+        tr.appendChild(rowInfo[1])
+        tr.appendChild(rowInfo[2])
+        tr.appendChild(rowInfo[3])
 
-    let btns = buttons(id)
-    tr.appendChild(btns[0])
-    tr.appendChild(btns[1])
-    tr.appendChild(btns[2])
-
+        let btns = buttons(id)
+        tr.appendChild(btns[0])
+        tr.appendChild(btns[1])
+        tr.appendChild(btns[2])
+    
     tbody.appendChild(tr)
+    }
 }
 
 function tableInfo(id,name,email,phone){

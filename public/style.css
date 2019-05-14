@@ -35,8 +35,9 @@ body{
     padding-top: 10px;
 }
 #Contacts-Table{
-    width: 50%;
-    margin-left: 30px;
+    width: 70%;
+    margin-top: 10px;
+    margin: 0 auto;
     margin-top: 10px;
 }
 thead{
@@ -44,8 +45,11 @@ thead{
     border-top: rgb(60,90,153) solid 1px;
     height: 10px;
 }
+thead tr{
+    height: 30px;
+}
 table{
-    width: 50%;
+    width: 70%;
     border-collapse: collapse;
     position: absolute;
 }
@@ -61,6 +65,7 @@ table{
 }
 #indexPageEditPage p{
     margin:0;
+    margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10%;
@@ -96,21 +101,17 @@ table{
 #indexPageEditSubmitBtn{
     display: inline;
 }
-table{
-    width: 50%;
-    border-collapse: collapse;
-    position: absolute;
-}
+
 thead{
     border-bottom: rgb(60,90,153) solid 1px;
     border-top: rgb(60,90,153) solid 1px;
-    height: 10px;
 }
 td{
     text-align: center;
+    height: 30px;
 }
-.btn-td{
-    width: 25px;
+tbody .detailsBtn{
+    margin-top: 5px;
 }
 /* Detail Edit Page */
 #detailPageEditPage{
@@ -203,7 +204,7 @@ td{
     visibility: hidden;
     height: 0;
     width: 30%;
-    margin-left: 35%
+    margin-left: 35%;
 }
 #addPage_Header{
     background-color: rgb(60,90,153);
