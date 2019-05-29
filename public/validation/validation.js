@@ -1,17 +1,18 @@
 
 export function validation(email,phone,emailErrorDoc,phoneErrorDoc){
+  let emailError = document.getElementById(emailErrorDoc)
+  emailError.innerHTML = ' '
+  let phoneError = document.getElementById(phoneErrorDoc)
+  phoneError.innerHTML = ' '
+  console.log('yes')
     if(emailValidation(email) && phoneValidation(phone)){
         return true
     }else{
       if(!emailValidation(email)){
-        let emailError = document.getElementById(emailErrorDoc)
-        emailError.innerHTML = ''
         emailError.style.color = 'red';
         emailError.innerHTML = 'Error: Invalid Email'
       } 
       if(!phoneValidation(phone)){
-        let phoneError = document.getElementById(phoneErrorDoc)
-        phoneError.innerHTML = ''
         phoneError.style.color = 'red';
         phoneError.innerHTML = 'Error: Invalid Phone Number'
       }

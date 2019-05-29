@@ -34,7 +34,10 @@ function tableInfo(id,name,email,phone){
 
     let emailTd = document.createElement('td')
     emailTd.setAttribute('id', `email${id}`)
-    emailTd.innerHTML = email
+    let a = document.createElement('a')
+    a.setAttribute('href',`mailto:${email}`)
+    a.innerHTML = email
+    emailTd.appendChild(a)
 
     let phoneTd = document.createElement('td')
     phoneTd.setAttribute('id', `phone${id}`)
